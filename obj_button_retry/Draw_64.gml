@@ -1,0 +1,71 @@
+/// @DnDAction : YoYo Games.Drawing.Draw_Self
+/// @DnDVersion : 1
+/// @DnDHash : 257C5485
+/// @DnDComment : // Draw self, this is the button sprite.
+draw_self();
+
+/// @DnDAction : YoYo Games.Drawing.Set_Font
+/// @DnDVersion : 1
+/// @DnDHash : 3FEF233F
+/// @DnDComment : // Set font.
+/// @DnDArgument : "font" "fnt_medium"
+/// @DnDSaveInfo : "font" "fnt_medium"
+draw_set_font(fnt_medium);
+
+/// @DnDAction : YoYo Games.Drawing.Set_Alignment
+/// @DnDVersion : 1.1
+/// @DnDHash : 3B7630A0
+/// @DnDComment : // Align drawn text horizontally and vertically.
+/// @DnDArgument : "halign" "fa_center"
+/// @DnDArgument : "valign" "fa_middle"
+draw_set_halign(fa_center);
+draw_set_valign(fa_middle);
+
+/// @DnDAction : YoYo Games.Drawing.Set_Color
+/// @DnDVersion : 1
+/// @DnDHash : 0F89EFBB
+/// @DnDComment : // Set color to opaque black.
+/// @DnDArgument : "color" "$FF000000"
+draw_set_colour($FF000000 & $ffffff);
+var l0F89EFBB_0=($FF000000 >> 24);
+draw_set_alpha(l0F89EFBB_0 / $ff);
+
+/// @DnDAction : YoYo Games.Drawing.Draw_Value
+/// @DnDVersion : 1
+/// @DnDHash : 1AA18D95
+/// @DnDComment : // Draw rety text.
+/// @DnDArgument : "x_relative" "1"
+/// @DnDArgument : "y" "20"
+/// @DnDArgument : "y_relative" "1"
+/// @DnDArgument : "caption" ""RETRY""
+draw_text(x + 0, y + 20, string("RETRY") + "");
+
+/// @DnDAction : YoYo Games.Drawing.Draw_Value_Transformed
+/// @DnDVersion : 1
+/// @DnDHash : 01822B70
+/// @DnDComment : // Draw retry text.
+/// @DnDArgument : "x_relative" "1"
+/// @DnDArgument : "y" "20"
+/// @DnDArgument : "y_relative" "1"
+/// @DnDArgument : "xscale" "0"
+/// @DnDArgument : "xscale_relative" "1"
+/// @DnDArgument : "yscale" "0"
+/// @DnDArgument : "yscale_relative" "1"
+/// @DnDArgument : "caption" ""RETRY""
+/// @DnDArgument : "angle" "image_angle"
+draw_text_transformed(x + 0, y + 20, string("RETRY") + "", image_xscale + 0, image_yscale + 0, image_angle);
+
+/// @DnDAction : YoYo Games.Drawing.Set_Alignment
+/// @DnDVersion : 1.1
+/// @DnDHash : 6929CA2E
+/// @DnDComment : // Reset text alignments.
+draw_set_halign(fa_left);
+draw_set_valign(fa_top);
+
+/// @DnDAction : YoYo Games.Drawing.Set_Color
+/// @DnDVersion : 1
+/// @DnDHash : 22F3B714
+/// @DnDComment : // Reset color to opaque white.
+draw_set_colour($FFFFFFFF & $ffffff);
+var l22F3B714_0=($FFFFFFFF >> 24);
+draw_set_alpha(l22F3B714_0 / $ff);
